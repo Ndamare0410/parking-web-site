@@ -1,1 +1,11 @@
+document.getElementById('loginForm').addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevent form submission for this example
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    // You can add your authentication logic here, such as sending the data to a server for validation.
+    // For this example, we'll just log the values to the console.
+    console.log('Username:', username);
+    console.log('Password:', password);
+});
 
