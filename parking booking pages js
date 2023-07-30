@@ -1,0 +1,12 @@
+document.getElementById('bookingForm').addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevent form submission for this example
+    const parkingType = document.getElementById('parkingType').value;
+    const date = document.getElementById('date').value;
+    const duration = document.getElementById('duration').value;
+
+    // You can add your booking logic here, such as displaying a confirmation message or sending the booking details to a server.
+    // For this example, we'll just log the values to the console.
+    console.log('Parking Type:', parkingType);
+    console.log('Date:', date);
+    console.log('Duration (in hours):', duration);
+});
