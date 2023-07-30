@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Parking Booking</h1>
+        <form id="bookingForm">
+            <label for="parkingType">Select Parking Type:</label>
+            <select id="parkingType" name="parkingType" required>
+                <option value="regular">Regular</option>
+                <option value="premium">Premium</option>
+                <option value="vip">VIP</option>
+            </select>
+
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="duration">Select Duration (in hours):</label>
+            <input type="number" id="duration" name="duration" min="1" max="12" required>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
